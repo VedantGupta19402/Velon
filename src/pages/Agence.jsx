@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import React, { useContext, useEffect, useRef } from 'react'
 import PhotoAndPostDescription from '../component/Agence/PhotoAndPostDescription';
-import Fotter from '../component/Agence/fotter.jsx'
+import Fotter from '../component/Agence/Fotter.jsx'
 
 const Agence = () => {
   gsap.registerPlugin(ScrollTrigger)

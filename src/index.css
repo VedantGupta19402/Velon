@@ -1,0 +1,127 @@
+@import "tailwindcss";
+@font-face {
+  font-family: font1;
+  src: url(../public/Lausanne-300.woff2);
+}
+@font-face {
+  font-family: font2;
+  src: url(../public/Lausanne-500.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  scrollbar-width: none;
+}
+.parentOfCrossBtn:hover .crossBtn {
+  background-color: #D3FD50;
+}
+.moveX {
+  animation-name: animationLink;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.moveLink {
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+.link:hover .moveLink {
+  opacity: 1;
+}
+@keyframes animationLink {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.animationOnSection2 {
+  animation-name: animationOnSection2;
+  animation-iteration-count: infinite;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+}
+
+@keyframes animationOnSection2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.imageBottomOfAgence {
+  transition: 0.3s;
+}
+.bottomDivOfAgence:hover .imageBottomOfAgence {
+  transform: scale(1.1);
+}
+
+.bottomDivOfAgence:hover .insidePhotoBottomTextOfAgence {
+  text-decoration: underline;
+}
+
+.btnFotterPage:hover {
+  color: #D3FD50;
+  border-color: #D3FD50;
+}
+
+.mainNavMenuBtn:hover .navMenuBtn {
+  background-color: black;
+}
+
+.hero-char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(120px) rotateX(40deg);
+}
+
+.orbs {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-30px) scale(1.05); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.1; }
+  50% { opacity: 0.25; }
+}
+
+.blog-img-reveal {
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.blog-card-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.tilt-inner {
+  transition: transform 0.2s ease;
+}
+
+.magnetic-wrap {
+  display: inline-block;
+}
+
+.marquee-track {
+  animation: marqueeScroll 12s linear infinite;
+}
+
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-33.333%); }
+}

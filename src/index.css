@@ -1,36 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cinzel:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap');
 @import "tailwindcss";
+
 @font-face {
   font-family: font1;
-  src: url(../public/Lausanne-300.woff2);
+  src: url('/Lausanne-300.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: font2;
-  src: url(../public/Lausanne-500.woff2);
+  src: url('/Lausanne-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   scrollbar-width: none;
 }
+
 .parentOfCrossBtn:hover .crossBtn {
   background-color: #D3FD50;
 }
+
 .moveX {
   animation-name: animationLink;
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
 .moveLink {
   opacity: 0;
   transition: all ease 0.3s;
 }
+
 .link:hover .moveLink {
   opacity: 1;
 }
+
 @keyframes animationLink {
   from {
     transform: translateX(0);
@@ -39,6 +55,7 @@ body {
     transform: translateX(-100%);
   }
 }
+
 .animationOnSection2 {
   animation-name: animationOnSection2;
   animation-iteration-count: infinite;
@@ -58,6 +75,7 @@ body {
 .imageBottomOfAgence {
   transition: 0.3s;
 }
+
 .bottomDivOfAgence:hover .imageBottomOfAgence {
   transform: scale(1.1);
 }

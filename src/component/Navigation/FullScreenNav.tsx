@@ -135,20 +135,20 @@ const FullScreenNav: React.FC = () => {
           <div
             className='origin-top link border-y-[0.5px] border-white relative overflow-hidden cursor-pointer'
             onClick={() => {
-              router.push('/Agence');
+              router.push('/About');
               setNavOpen(false);
             }}
           >
             <h1 className='font-[font2] text-[8vw] uppercase text-center leading-[0.8] py-12'>
-              Agence
+              About
             </h1>
             <div className='moveLink flex absolute top-0 bg-[#D3FD50] text-black'>
               <div className='moveX flex items-center w-[200vw]'>
-                <h2 className='uppercase whitespace-nowrap font-[font2] text-[8vw]'>meet the team</h2>
+                <h2 className='uppercase whitespace-nowrap font-[font2] text-[8vw]'>about me</h2>
                 <img className='h-25 rounded-full object-cover shrink-0 w-80 pb-3' src='https://picsum.photos/seed/menu1/640/290' alt='menu' />
-                <h2 className='uppercase whitespace-nowrap font-[font2] text-[8vw]'>meet the team</h2>
+                <h2 className='uppercase whitespace-nowrap font-[font2] text-[8vw]'>about me</h2>
                 <img className='h-25 rounded-full object-cover shrink-0 w-80 pb-3' src='https://picsum.photos/seed/menu1/640/290' alt='menu' />
-                <h2 className='uppercase whitespace-nowrap font-[font2] text-[8vw]'>meet the team</h2>
+                <h2 className='uppercase whitespace-nowrap font-[font2] text-[8vw]'>about me</h2>
                 <img className='h-25 rounded-full object-cover shrink-0 w-80 pb-3' src='https://picsum.photos/seed/menu1/640/290' alt='menu' />
               </div>
             </div>

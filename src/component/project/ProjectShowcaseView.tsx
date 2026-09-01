@@ -62,7 +62,7 @@ const ProjectShowcaseView: React.FC<ProjectShowcaseViewProps> = ({
               WORK
             </Link>
             <Link
-              href='/Agence'
+              href='/About'
               className='text-neutral-500 hover:text-neutral-900 transition-colors tracking-[0.2em]'
             >
               ABOUT

@@ -13,7 +13,7 @@ const HomeBottomText: React.FC = () => {
         Portfolio
       </Link>
       <Link
-        href='/Agence'
+        href='/About'
         className='text-[6.5vw] uppercase border-3 hover:text-[#D3FD50] px-10 border-white hover:border-[#D3FD50] rounded-full leading-[5.5vw] pt-3 transition-colors'
       >
         About

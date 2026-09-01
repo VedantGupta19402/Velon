@@ -72,15 +72,15 @@ body {
   }
 }
 
-.imageBottomOfAgence {
+.imageBottomOfAbout {
   transition: 0.3s;
 }
 
-.bottomDivOfAgence:hover .imageBottomOfAgence {
+.bottomDivOfAbout:hover .imageBottomOfAbout {
   transform: scale(1.1);
 }
 
-.bottomDivOfAgence:hover .insidePhotoBottomTextOfAgence {
+.bottomDivOfAbout:hover .insidePhotoBottomTextOfAbout {
   text-decoration: underline;
 }
 

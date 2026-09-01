@@ -21,8 +21,8 @@ const NavContext: React.FC<NavContextProps> = ({ children }) => {
     if (
       pathname === '/Project' ||
       pathname === '/project' ||
-      pathname === '/Agence' ||
-      pathname === '/agence' ||
+      pathname === '/About' ||
+      pathname === '/about' ||
       pathname === '/Contact' ||
       pathname === '/contact' ||
       pathname === '/Blog' ||

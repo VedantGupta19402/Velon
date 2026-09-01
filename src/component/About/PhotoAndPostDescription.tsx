@@ -107,15 +107,15 @@ const PhotoAndPostDescription: React.FC = () => {
 
       {/* 03 Third animation section */}
       <section ref={thirdPageRef} className='h-screen w-screen absolute top-[200vh]'>
-        <div className='bottomDivOfAgence h-screen w-screen rounded-t-[6vw] overflow-hidden relative'>
+        <div className='bottomDivOfAbout h-screen w-screen rounded-t-[6vw] overflow-hidden relative'>
           <img
-            className='imageBottomOfAgence object-bottom h-full w-full'
+            className='imageBottomOfAbout object-bottom h-full w-full'
             src='https://picsum.photos/seed/showcase1/1280/960'
             alt='Showcase 1'
           />
           <div className='absolute items-center justify-center top-0 left-0 flex flex-col gap-16 h-screen w-full'>
             <h1 className='text-white font-[font2] text-4xl'>Pulse</h1>
-            <h1 className='insidePhotoBottomTextOfAgence text-white font-[font2] text-8xl leading-4'>
+            <h1 className='insidePhotoBottomTextOfAbout text-white font-[font2] text-8xl leading-4'>
               Motion in every frame
             </h1>
           </div>
@@ -124,15 +124,15 @@ const PhotoAndPostDescription: React.FC = () => {
 
       {/* 04 Fourth animation section */}
       <section ref={forthPageRef} className='h-screen w-screen absolute top-[300vh]'>
-        <div className='bottomDivOfAgence h-screen w-screen rounded-t-[6vw] overflow-hidden relative'>
+        <div className='bottomDivOfAbout h-screen w-screen rounded-t-[6vw] overflow-hidden relative'>
           <img
-            className='imageBottomOfAgence object-bottom h-full w-full'
+            className='imageBottomOfAbout object-bottom h-full w-full'
             src='https://picsum.photos/seed/showcase2/1280/960'
             alt='Showcase 2'
           />
           <div className='absolute items-center justify-center top-0 left-0 flex flex-col gap-16 h-screen w-full'>
             <h1 className='text-white font-[font2] text-4xl'>Aether</h1>
-            <h1 className='insidePhotoBottomTextOfAgence text-white font-[font2] text-8xl leading-4'>
+            <h1 className='insidePhotoBottomTextOfAbout text-white font-[font2] text-8xl leading-4'>
               Born from light
             </h1>
           </div>
@@ -141,15 +141,15 @@ const PhotoAndPostDescription: React.FC = () => {
 
       {/* 05 Fifth animation section */}
       <section ref={fifthPageRef} className='h-screen w-screen absolute top-[400vh]'>
-        <div className='bottomDivOfAgence h-screen w-screen rounded-t-[6vw] overflow-hidden relative'>
+        <div className='bottomDivOfAbout h-screen w-screen rounded-t-[6vw] overflow-hidden relative'>
           <img
-            className='imageBottomOfAgence object-bottom h-full w-full'
+            className='imageBottomOfAbout object-bottom h-full w-full'
             src='https://picsum.photos/seed/showcase3/1280/960'
             alt='Showcase 3'
           />
           <div className='absolute items-center justify-center top-0 left-0 flex flex-col gap-16 h-screen w-full'>
             <h1 className='text-white font-[font2] text-4xl'>Drift</h1>
-            <h1 className='insidePhotoBottomTextOfAgence text-white font-[font2] text-8xl leading-4'>
+            <h1 className='insidePhotoBottomTextOfAbout text-white font-[font2] text-8xl leading-4'>
               Where speed meets stillness
             </h1>
           </div>

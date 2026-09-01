@@ -4,10 +4,10 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import React, { useEffect, useRef } from 'react';
-import { PhotoAndPostDescription } from '@/component/Agence/PhotoAndPostDescription';
-import { Fotter } from '@/component/Agence/Fotter';
+import { PhotoAndPostDescription } from '@/component/About/PhotoAndPostDescription';
+import { Fotter } from '@/component/About/Fotter';
 
-const AgencePage: React.FC = () => {
+const AboutPage: React.FC = () => {
   gsap.registerPlugin(ScrollTrigger);
   const imageDivRef = useRef<HTMLDivElement | null>(null);
   const imageRef = useRef<HTMLImageElement | null>(null);
@@ -81,25 +81,25 @@ const AgencePage: React.FC = () => {
         <div className='font-[font1] relative'>
           <div className='mt-[55vh]'>
             <h1 className='text-[19vw] text-center uppercase leading-[17vw]'>
-              BUILT <br />
-              TO MOVE
+              ABOUT <br />
+              ME
             </h1>
             <div className='px-6 sm:pl-[20vw] lg:pl-[30vw] max-w-6xl mt-8'>
               <p className='text-xl sm:text-[3vw] lg:text-[2.2vw] leading-relaxed'>
-                We design at the speed of culture. Velon is where motion meets meaning — every pixel, every frame, every interaction driven by purpose. Great brands don&apos;t stand still. They move, adapt, and evolve. We build brands that are built to move.
+                I&apos;m Vedant, a creative developer who designs at the speed of culture. My work is where motion meets meaning — every pixel, every frame, every interaction driven by purpose. I don&apos;t stand still. I move, adapt, and evolve. I build things that are built to move.
               </p>
             </div>
             <div className='m-12 sm:m-24 lg:m-36 flex flex-col sm:flex-row gap-12 sm:gap-[20vw]'>
               <div>
-                <h1 className='text-3xl font-bold'>Expertise</h1>
+                <h1 className='text-3xl font-bold'>What I do</h1>
               </div>
               <div>
                 <ul className='text-2xl space-y-2'>
-                  <li>Strategy</li>
-                  <li>Advertising</li>
-                  <li>Branding</li>
-                  <li>Design</li>
-                  <li>Content</li>
+                  <li>Creative Development</li>
+                  <li>Motion Design</li>
+                  <li>UI Engineering</li>
+                  <li>WebGL</li>
+                  <li>Brand Experience</li>
                 </ul>
               </div>
             </div>
@@ -110,17 +110,17 @@ const AgencePage: React.FC = () => {
         <div className='min-h-[30vw] w-full flex flex-col sm:flex-row justify-center gap-8 sm:gap-20 pt-10 px-6 sm:px-10'>
           <div className='sm:w-1/3'>
             <h4 className='text-base sm:text-[1.3vw] leading-7 font-[font2] text-start'>
-              Our Work_ Built in motion, shaped by purpose, driven by the relentless pursuit of better.
+              My Work_ Built in motion, shaped by purpose, driven by the relentless pursuit of better.
             </h4>
           </div>
           <div className='sm:w-1/3'>
             <h4 className='text-base sm:text-[1.3vw] leading-7 font-[font2] text-start'>
-              Our Creative_ Thriving where ideas move fast and talent moves faster. Pushed to become the sharpest versions of ourselves.
+              My Craft_ Thriving where ideas move fast and imagination moves faster. Always pushed to become the sharpest version of my work.
             </h4>
           </div>
           <div className='sm:w-1/3'>
             <h4 className='text-base sm:text-[1.3vw] leading-7 font-[font2] text-start'>
-              Our Culture_ We move together. No silos, no ego. Just a team building something worth moving for.
+              My Approach_ I move with intent. No silos, no ego. Just careful craft and things worth moving for.
             </h4>
           </div>
         </div>
@@ -138,5 +138,5 @@ const AgencePage: React.FC = () => {
   );
 };
 
-export { AgencePage };
-export default AgencePage;
+export { AboutPage };
+export default AboutPage;

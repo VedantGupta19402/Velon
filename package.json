@@ -7,7 +7,7 @@
     "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -21,8 +21,10 @@
     "@types/node": "^26.5.1",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "eslint": "^9.38.0",
+    "eslint-config-next": "^16.3.5",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.16",
-    "typescript": "^7.0.2"
+    "typescript": "^6.0.0"
   }
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useEffect, useState, ReactNode } from 'react';
+import React, { createContext, useState, ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
 
 const NavBarContext = createContext<[boolean, React.Dispatch<React.SetStateAction<boolean>>]>([false, () => {}]);
@@ -13,31 +13,25 @@ interface NavContextProps {
 
 const NavContext: React.FC<NavContextProps> = ({ children }) => {
   const [navOpen, setNavOpen] = useState<boolean>(false);
-  const [navColor, setNavColor] = useState<string>('white');
   const [color, setColor] = useState<string>('black');
   const pathname = usePathname();
 
-  useEffect(() => {
-    if (
-      pathname === '/Project' ||
-      pathname === '/project' ||
-      pathname === '/About' ||
-      pathname === '/about' ||
-      pathname === '/Contact' ||
-      pathname === '/contact' ||
-      pathname === '/Blog' ||
-      pathname === '/blog'
-    ) {
-      setNavColor('black');
-    } else {
-      setNavColor('white');
-    }
-  }, [pathname]);
+  const navColor =
+    pathname === '/Project' ||
+    pathname === '/project' ||
+    pathname === '/About' ||
+    pathname === '/about' ||
+    pathname === '/Contact' ||
+    pathname === '/contact' ||
+    pathname === '/Blog' ||
+    pathname === '/blog'
+      ? 'black'
+      : 'white';
 
   return (
     <div>
       <NavBarContext.Provider value={[navOpen, setNavOpen]}>
-        <NavBarColorContext.Provider value={[navColor, setNavColor]}>
+        <NavBarColorContext.Provider value={[navColor, () => {}]}>
           <ColorCombination.Provider value={[color, setColor]}>
             {children}
           </ColorCombination.Provider>

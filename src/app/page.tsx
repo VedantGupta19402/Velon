@@ -11,7 +11,7 @@ export default function HomePage() {
       <div className='h-screen w-screen fixed inset-0'>
         <Video />
       </div>
-      <div className='h-screen w-screen relative flex flex-col justify-between pt-16 sm:pt-0'>
+      <div className='h-screen w-screen relative flex flex-col justify-between pt-20 sm:pt-0'>
         <HomeHeroText />
         <HomeBottomText />
       </div>

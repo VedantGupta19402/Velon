@@ -13,7 +13,7 @@ const NavBar: React.FC = () => {
   return (
     <div className='z-40 flex fixed top-0 w-screen items-start justify-between'>
       <div
-        className='p-5 cursor-pointer select-none'
+        className='p-6 cursor-pointer select-none'
         onClick={() => {
           router.push('/');
         }}
@@ -41,7 +41,7 @@ const NavBar: React.FC = () => {
           ref={navGreenBar}
           className='bg-[#D3FD50] absolute w-full transition-all duration-300 h-0 top-0'
         ></div>
-        <div className='mainNavMenuBtn relative flex flex-col gap-1.5 justify-center h-full px-6 sm:px-12 items-end'>
+        <div className='mainNavMenuBtn relative flex flex-col gap-2 justify-center h-full px-8 sm:px-14 items-end'>
           <div className='navMenuBtn w-12 sm:w-18 h-0.5 bg-white'></div>
           <div className='navMenuBtn w-8 sm:w-10 h-0.5 bg-white'></div>
         </div>

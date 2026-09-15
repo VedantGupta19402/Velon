@@ -87,7 +87,7 @@ const FullScreenNav: React.FC = () => {
         </div>
       </div>
       <div ref={fullNavLinkRef} className='relative z-10'>
-        <div className='navlink w-full flex justify-between p-5 items-start'>
+        <div className='navlink w-full flex justify-between p-6 items-start'>
           <div
             onClick={() => {
               router.push('/');
@@ -109,7 +109,7 @@ const FullScreenNav: React.FC = () => {
             <div className='crossBtn h-36 w-1 rotate-45 origin-top right-0 bg-white absolute'></div>
           </div>
         </div>
-        <div className='py-24'>
+        <div className='py-28'>
           <div
             className='origin-top link border-y-[0.5px] border-white relative overflow-hidden cursor-pointer'
             onClick={() => {
@@ -117,7 +117,7 @@ const FullScreenNav: React.FC = () => {
               setNavOpen(false);
             }}
           >
-            <h1 className='font-[font2] text-[8vw] uppercase text-center leading-[0.8] py-12'>
+            <h1 className='font-[font2] text-[8vw] uppercase text-center leading-[0.8] py-14'>
               Project
             </h1>
             <div className='moveLink flex absolute top-0 bg-[#D3FD50] text-black'>
@@ -139,7 +139,7 @@ const FullScreenNav: React.FC = () => {
               setNavOpen(false);
             }}
           >
-            <h1 className='font-[font2] text-[8vw] uppercase text-center leading-[0.8] py-12'>
+            <h1 className='font-[font2] text-[8vw] uppercase text-center leading-[0.8] py-14'>
               About
             </h1>
             <div className='moveLink flex absolute top-0 bg-[#D3FD50] text-black'>
@@ -161,7 +161,7 @@ const FullScreenNav: React.FC = () => {
               setNavOpen(false);
             }}
           >
-            <h1 className='font-[font2] text-[8vw] uppercase text-center leading-[0.8] py-12'>
+            <h1 className='font-[font2] text-[8vw] uppercase text-center leading-[0.8] py-14'>
               Contact
             </h1>
             <div className='moveLink flex absolute top-0 bg-[#D3FD50] text-black'>
@@ -183,7 +183,7 @@ const FullScreenNav: React.FC = () => {
               setNavOpen(false);
             }}
           >
-            <h1 className='font-[font2] text-[8vw] uppercase text-center leading-[0.8] py-12'>
+            <h1 className='font-[font2] text-[8vw] uppercase text-center leading-[0.8] py-14'>
               Blogue
             </h1>
             <div className='moveLink flex absolute top-0 bg-[#D3FD50] text-black'>

@@ -66,7 +66,7 @@ const AboutPage: React.FC = () => {
 
   return (
     <div className='text-black bg-white'>
-      <div id='pageStart' className='section1 relative py-1'>
+      <div id='pageStart' className='section1 relative py-2'>
         <div
           ref={imageDivRef}
           className='overflow-hidden h-[20vw] w-[15vw] absolute top-[14.5vw] left-[30.7vw] rounded-4xl'
@@ -84,12 +84,12 @@ const AboutPage: React.FC = () => {
               ABOUT <br />
               ME
             </h1>
-            <div className='px-6 sm:pl-[20vw] lg:pl-[30vw] max-w-6xl mt-8'>
+            <div className='px-6 sm:pl-[20vw] lg:pl-[30vw] max-w-6xl mt-10'>
               <p className='text-xl sm:text-[3vw] lg:text-[2.2vw] leading-relaxed'>
                 I&apos;m Vedant, a creative developer who designs at the speed of culture. My work is where motion meets meaning — every pixel, every frame, every interaction driven by purpose. I don&apos;t stand still. I move, adapt, and evolve. I build things that are built to move.
               </p>
             </div>
-            <div className='m-12 sm:m-24 lg:m-36 flex flex-col sm:flex-row gap-12 sm:gap-[20vw]'>
+            <div className='m-14 sm:m-28 lg:m-40 flex flex-col sm:flex-row gap-12 sm:gap-[20vw]'>
               <div>
                 <h1 className='text-3xl font-bold'>What I do</h1>
               </div>
@@ -107,7 +107,7 @@ const AboutPage: React.FC = () => {
         </div>
       </div>
       <div className='section2 min-h-screen mt-20'>
-        <div className='min-h-[30vw] w-full flex flex-col sm:flex-row justify-center gap-8 sm:gap-20 pt-10 px-6 sm:px-10'>
+        <div className='min-h-[30vw] w-full flex flex-col sm:flex-row justify-center gap-8 sm:gap-20 pt-12 px-8 sm:px-12'>
           <div className='sm:w-1/3'>
             <h4 className='text-base sm:text-[1.3vw] leading-7 font-[font2] text-start'>
               My Work_ Built in motion, shaped by purpose, driven by the relentless pursuit of better.
@@ -129,7 +129,7 @@ const AboutPage: React.FC = () => {
         ref={sectionColorChange}
         className='section2 -mt-40 sm:-mt-140 flex flex-col items-center justify-center'
       >
-        <div className='mt-20 sm:mt-50'>
+        <div className='mt-24 sm:mt-56'>
           <PhotoAndPostDescription />
         </div>
         <Fotter />

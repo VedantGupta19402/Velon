@@ -113,7 +113,7 @@ const PhotoAndPostDescription: React.FC = () => {
             src='https://picsum.photos/seed/showcase1/1280/960'
             alt='Showcase 1'
           />
-          <div className='absolute items-center justify-center top-0 left-0 flex flex-col gap-16 h-screen w-full'>
+          <div className='absolute items-center justify-center top-0 left-0 flex flex-col gap-20 h-screen w-full'>
             <h1 className='text-white font-[font2] text-4xl'>Pulse</h1>
             <h1 className='insidePhotoBottomTextOfAbout text-white font-[font2] text-8xl leading-4'>
               Motion in every frame
@@ -130,7 +130,7 @@ const PhotoAndPostDescription: React.FC = () => {
             src='https://picsum.photos/seed/showcase2/1280/960'
             alt='Showcase 2'
           />
-          <div className='absolute items-center justify-center top-0 left-0 flex flex-col gap-16 h-screen w-full'>
+          <div className='absolute items-center justify-center top-0 left-0 flex flex-col gap-20 h-screen w-full'>
             <h1 className='text-white font-[font2] text-4xl'>Aether</h1>
             <h1 className='insidePhotoBottomTextOfAbout text-white font-[font2] text-8xl leading-4'>
               Born from light
@@ -147,7 +147,7 @@ const PhotoAndPostDescription: React.FC = () => {
             src='https://picsum.photos/seed/showcase3/1280/960'
             alt='Showcase 3'
           />
-          <div className='absolute items-center justify-center top-0 left-0 flex flex-col gap-16 h-screen w-full'>
+          <div className='absolute items-center justify-center top-0 left-0 flex flex-col gap-20 h-screen w-full'>
             <h1 className='text-white font-[font2] text-4xl'>Drift</h1>
             <h1 className='insidePhotoBottomTextOfAbout text-white font-[font2] text-8xl leading-4'>
               Where speed meets stillness

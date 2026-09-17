@@ -83,13 +83,13 @@ const ProjectPage: React.FC = () => {
   };
 
   return (
-    <div className='text-black p-4 sm:p-6 lg:p-8 bg-white min-h-screen'>
-      <div className='pt-[35vh] sm:pt-[40vh]'>
-        <h2 className='font-[font2] text-[13.5vw] uppercase select-none leading-none tracking-tight mb-8 sm:mb-12'>
+    <div className='text-black p-5 sm:p-8 lg:p-10 bg-white min-h-screen'>
+      <div className='pt-[40vh] sm:pt-[45vh]'>
+        <h2 className='font-[font2] text-[13.5vw] uppercase select-none leading-none tracking-tight mb-10 sm:mb-14'>
           Our Work
         </h2>
 
-        <div className='project-container flex flex-col gap-6 sm:gap-8'>
+        <div className='project-container flex flex-col gap-8 sm:gap-10'>
           {projectsData.map((row, index) => (
             <div
               key={index}

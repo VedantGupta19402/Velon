@@ -202,7 +202,7 @@ const BlogPage: React.FC = () => {
 
   return (
     <div className='text-black bg-white'>
-      <div className='pt-[25vh] pb-20 px-10 relative overflow-hidden'>
+      <div className='pt-[28vh] pb-24 px-12 relative overflow-hidden'>
         <div
           className='orbs w-[40vw] h-[40vw] bg-[#D3FD50] top-[-15vw] left-[-5vw] opacity-10'
           style={{ animation: 'float 10s ease-in-out infinite' }}
@@ -219,7 +219,7 @@ const BlogPage: React.FC = () => {
             {splitText('Reads')}
           </h1>
         </div>
-        <div className='flex justify-center mt-20 relative z-10'>
+        <div className='flex justify-center mt-24 relative z-10'>
           <div
             className='w-[1px] h-32 bg-black blog-line-drop origin-top'
             style={{ transform: 'scaleY(0)' }}
@@ -227,7 +227,7 @@ const BlogPage: React.FC = () => {
         </div>
       </div>
 
-      <div className='categories-wrap px-10 pb-16 flex justify-center gap-4 flex-wrap'>
+      <div className='categories-wrap px-12 pb-16 flex justify-center gap-8 flex-wrap'>
         {categories.map((cat) => (
           <button
             key={cat}
@@ -238,7 +238,7 @@ const BlogPage: React.FC = () => {
         ))}
       </div>
 
-      <div className='featured-wrap px-10 pb-20'>
+      <div className='featured-wrap px-12 pb-24'>
         <div className='featured-card group cursor-pointer relative overflow-hidden rounded-[3vw] bg-black text-white'>
           <img
             className='w-full h-[70vh] object-cover opacity-60 group-hover:scale-105 transition-all duration-700'
@@ -246,7 +246,7 @@ const BlogPage: React.FC = () => {
             alt='Featured post'
           />
           <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent'></div>
-          <div className='absolute bottom-0 left-0 p-12 lg:p-20'>
+          <div className='absolute bottom-0 left-0 p-14 lg:p-24'>
             <span className='font-[font2] text-xs uppercase tracking-[0.2em] text-[#D3FD50]'>
               Featured · Design
             </span>
@@ -264,7 +264,7 @@ const BlogPage: React.FC = () => {
       </div>
 
       <div ref={gridRef} className='px-10 pb-40'>
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
           {posts.map((post, index) => (
             <div
               key={index}
@@ -276,7 +276,7 @@ const BlogPage: React.FC = () => {
               onMouseLeave={() => resetTilt(index)}
             >
               <div className='tilt-inner'>
-                <div className='overflow-hidden rounded-[2vw] mb-6 relative'>
+                <div className='overflow-hidden rounded-[2vw] mb-8 relative'>
                   <img
                     className='w-full h-64 object-cover transition-all duration-700 group-hover:scale-110'
                     src={post.image}
@@ -288,13 +288,13 @@ const BlogPage: React.FC = () => {
                   <span className='font-[font2] text-xs uppercase tracking-[0.2em] text-[#D3FD50]'>
                     {post.category}
                   </span>
-                  <h3 className='font-[font2] text-2xl uppercase leading-tight mt-2 group-hover:text-[#D3FD50] transition-colors duration-300'>
+                  <h3 className='font-[font2] text-2xl uppercase leading-tight mt-3 group-hover:text-[#D3FD50] transition-colors duration-300'>
                     {post.title}
                   </h3>
-                  <p className='font-[font1] text-base mt-3 text-black/60 leading-relaxed'>
+                  <p className='font-[font1] text-base mt-4 text-black/60 leading-relaxed'>
                     {post.excerpt}
                   </p>
-                  <div className='flex items-center justify-between mt-4'>
+                  <div className='flex items-center justify-between mt-5'>
                     <span className='font-[font2] text-xs uppercase tracking-[0.1em] text-black/40'>
                       {post.date}
                     </span>
@@ -314,11 +314,11 @@ const BlogPage: React.FC = () => {
         className='bg-black text-white py-8 overflow-hidden border-y border-white/10'
       >
         <div
-          className='marquee-track flex gap-16 whitespace-nowrap'
+          className='marquee-track flex gap-20 whitespace-nowrap'
           style={{ width: 'max-content' }}
         >
           {[...Array(3)].map((_, i) => (
-            <div key={i} className='flex gap-16 items-center'>
+            <div key={i} className='flex gap-20 items-center'>
               <span className='font-[font2] text-2xl uppercase tracking-[0.2em]'>Strategy</span>
               <span className='w-2 h-2 bg-[#D3FD50] rounded-full'></span>
               <span className='font-[font2] text-2xl uppercase tracking-[0.2em]'>Design</span>
@@ -338,10 +338,10 @@ const BlogPage: React.FC = () => {
         </div>
       </div>
 
-      <div className='blog-footer bg-black text-white px-10 py-16 border-t border-white/10'>
+      <div className='blog-footer bg-black text-white px-12 py-20 border-t border-white/10'>
         <div className='footer-reveal-blog'>
-          <div className='flex flex-col sm:flex-row justify-between items-center gap-6'>
-            <div className='flex gap-6'>
+          <div className='flex flex-col sm:flex-row justify-between items-center gap-8'>
+            <div className='flex gap-8'>
               {['fb', 'ig', 'in', 'be'].map((s) => (
                 <button
                   key={s}
@@ -358,7 +358,7 @@ const BlogPage: React.FC = () => {
               Back to top
             </a>
           </div>
-          <div className='pt-20 flex justify-center'>
+          <div className='pt-24 flex justify-center'>
             <h1 className='font-[font2] text-5xl sm:text-8xl uppercase text-center'>
               See you in motion
             </h1>

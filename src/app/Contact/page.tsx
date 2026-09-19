@@ -71,7 +71,7 @@ const ContactPage: React.FC = () => {
           ref={(el) => {
             sectionRefs.current[i] = el;
           }}
-          className='min-h-screen flex flex-col justify-center px-6 sm:px-10 lg:px-20 py-20 border-b border-black/5'
+          className='min-h-screen flex flex-col justify-center px-8 sm:px-12 lg:px-24 py-24 border-b border-black/5'
         >
           <div className='max-w-7xl mx-auto w-full'>
             <h2 className='font-[font1] text-[10vw] sm:text-[8vw] lg:text-[6.5vw] leading-[1.05] uppercase select-none -tracking-[0.02em]'>
@@ -84,7 +84,7 @@ const ContactPage: React.FC = () => {
               ))}
             </h2>
 
-            <div className='flex flex-col sm:flex-row gap-8 sm:gap-12 lg:gap-20 mt-12 sm:mt-16 lg:mt-20 mb-10 sm:mb-14 lg:mb-18'>
+            <div className='flex flex-col sm:flex-row gap-8 sm:gap-12 lg:gap-20 mt-14 sm:mt-20 lg:mt-24 mb-12 sm:mb-16 lg:mb-20'>
               <p className='anim-line font-[font1] text-base sm:text-lg lg:text-xl text-black/50 leading-relaxed'>
                 Onscreen or in an office.
                 <br />
@@ -106,11 +106,11 @@ const ContactPage: React.FC = () => {
               </address>
             </div>
 
-            <div className='anim-line overflow-hidden border-t border-b border-black/10 py-4 sm:py-5 mb-8 sm:mb-10'>
+            <div className='anim-line overflow-hidden border-t border-b border-black/10 py-5 sm:py-6 mb-10 sm:mb-12'>
               <div className='marquee-track flex whitespace-nowrap'>
                 <a
                   href='mailto:hello@k72.ca'
-                  className='font-[font2] text-lg sm:text-xl lg:text-2xl hover:text-[#D3FD50] transition-colors duration-300 flex items-center gap-6 sm:gap-8 mr-6 sm:mr-8 shrink-0'
+                  className='font-[font2] text-lg sm:text-xl lg:text-2xl hover:text-[#D3FD50] transition-colors duration-300 flex items-center gap-8 sm:gap-10 mr-8 sm:mr-10 shrink-0'
                 >
                   <span>hello@k72.ca</span>
                   <svg className='w-5 h-5 sm:w-6 sm:h-6 fill-current shrink-0' viewBox='0 0 24 24'>
@@ -119,7 +119,7 @@ const ContactPage: React.FC = () => {
                 </a>
                 <a
                   href='mailto:hello@k72.ca'
-                  className='font-[font2] text-lg sm:text-xl lg:text-2xl hover:text-[#D3FD50] transition-colors duration-300 flex items-center gap-6 sm:gap-8 mr-6 sm:mr-8 shrink-0'
+                  className='font-[font2] text-lg sm:text-xl lg:text-2xl hover:text-[#D3FD50] transition-colors duration-300 flex items-center gap-8 sm:gap-10 mr-8 sm:mr-10 shrink-0'
                   aria-hidden='true'
                 >
                   <span>hello@k72.ca</span>
@@ -129,7 +129,7 @@ const ContactPage: React.FC = () => {
                 </a>
                 <a
                   href='mailto:hello@k72.ca'
-                  className='font-[font2] text-lg sm:text-xl lg:text-2xl hover:text-[#D3FD50] transition-colors duration-300 flex items-center gap-6 sm:gap-8 mr-6 sm:mr-8 shrink-0'
+                  className='font-[font2] text-lg sm:text-xl lg:text-2xl hover:text-[#D3FD50] transition-colors duration-300 flex items-center gap-8 sm:gap-10 mr-8 sm:mr-10 shrink-0'
                   aria-hidden='true'
                 >
                   <span>hello@k72.ca</span>
@@ -144,7 +144,7 @@ const ContactPage: React.FC = () => {
               <h3 className='font-[font2] text-xs sm:text-sm uppercase tracking-[0.25em] text-black/40 mb-4'>
                 Follow us
               </h3>
-              <ul className='flex gap-6 sm:gap-8'>
+              <ul className='flex gap-8 sm:gap-10'>
                 {socials.map((s) => (
                   <li key={s.label}>
                     <a

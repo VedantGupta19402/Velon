@@ -43,9 +43,9 @@ const ProjectShowcaseView: React.FC<ProjectShowcaseViewProps> = ({
       </svg>
 
       {/* ── 1. GLOBAL NAVIGATION ── */}
-      <header className='relative z-20 w-full px-[5vw] sm:px-[5.5vw] pt-6 sm:pt-8 pb-2 flex items-center justify-between shrink-0'>
+      <header className='relative z-20 w-full px-[5vw] sm:px-[5.5vw] pt-8 sm:pt-10 pb-3 flex items-center justify-between shrink-0'>
         {/* Left: Brand Identity */}
-        <div className='flex items-center gap-4'>
+        <div className='flex items-center gap-5'>
           <span className='font-mono text-xs sm:text-[13px] font-semibold tracking-[0.26em] text-neutral-900 uppercase'>
             VEDANT GUPTA
           </span>
@@ -53,8 +53,8 @@ const ProjectShowcaseView: React.FC<ProjectShowcaseViewProps> = ({
         </div>
 
         {/* Right: Editorial Nav Links & Controls */}
-        <div className='flex items-center gap-8 sm:gap-12'>
-          <nav className='hidden md:flex items-center gap-8 lg:gap-10 text-[11px] font-mono tracking-[0.2em] uppercase'>
+        <div className='flex items-center gap-10 sm:gap-14'>
+          <nav className='hidden md:flex items-center gap-10 lg:gap-12 text-[11px] font-mono tracking-[0.2em] uppercase'>
             <Link
               href='/Project'
               className='text-neutral-900 font-bold border-b border-neutral-900 pb-0.5 tracking-[0.2em]'
@@ -82,7 +82,7 @@ const ProjectShowcaseView: React.FC<ProjectShowcaseViewProps> = ({
           </nav>
 
           {/* Minimalist Action Dot / Close Toggle */}
-          <div className='flex items-center gap-3 pl-2'>
+          <div className='flex items-center gap-4 pl-3'>
             {onClose ? (
               <button
                 type='button'
@@ -120,7 +120,7 @@ const ProjectShowcaseView: React.FC<ProjectShowcaseViewProps> = ({
           <div className='w-full lg:w-[22vw] xl:w-[20vw] 2xl:w-[18vw] flex flex-col justify-center px-[5vw] sm:px-[5.5vw] py-6 lg:py-0 order-2 lg:order-1 shrink-0 relative z-10'>
             
             {/* Section Eyebrow */}
-            <div className='flex items-center gap-3.5 mb-5'>
+            <div className='flex items-center gap-4 mb-6'>
               <span className='font-mono text-[11px] sm:text-xs font-semibold tracking-[0.18em] text-neutral-800 uppercase'>
                 {project.indexNumber || '01'} / {project.totalProjects || '04'}
               </span>
@@ -143,13 +143,13 @@ const ProjectShowcaseView: React.FC<ProjectShowcaseViewProps> = ({
             </h1>
 
             {/* Subtitle Kicker */}
-            <span className='font-mono text-[11px] sm:text-[12px] font-bold tracking-[0.2em] text-neutral-800 uppercase mb-6 block'>
+            <span className='font-mono text-[11px] sm:text-[12px] font-bold tracking-[0.2em] text-neutral-800 uppercase mb-8 block'>
               {project.categoryTag || 'INTERACTIVE TATTOO EXPERIENCE'}
             </span>
 
             {/* Supporting Description */}
             <p
-              className='text-neutral-600 max-w-[22rem] mb-7 font-light'
+              className='text-neutral-600 max-w-[22rem] mb-8 font-light'
               style={{
                 fontFamily: 'font1, sans-serif',
                 fontSize: 'clamp(13px, 0.9vw, 15px)',

@@ -12,3 +12,4 @@ const nextConfig = {
 };
 
 export default nextConfig;
+//this is net js config

@@ -12,4 +12,6 @@ const nextConfig = {
 };
 
 export default nextConfig;
-//this is net js config
+//this is next js config
+//this is next js config
+//this is next js config

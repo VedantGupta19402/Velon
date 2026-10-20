@@ -14,4 +14,6 @@ const nextConfig = {
 export default nextConfig;
 //this is next js config
 //this is next js config
+//this is next js config 
+//this is next js config
 //this is next js config
